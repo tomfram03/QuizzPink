@@ -8,7 +8,7 @@ async function loadFile(fileName) {
     return text.trim().split('\n');
 }
 async function randomFact() {
-    const file = await loadFile('facts.txt');
+    const file = await loadFile('perguntas.txt');
     const randomFact = file[Math.floor(Math.random() * file.length)];
     document.getElementById('FATO').textContent = randomFact;
     toogle("load");toogle("FATO");

@@ -2,11 +2,13 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quizz Pink</title>
+    <title>Outubro Rosa</title>
     <link rel="icon" href="icon.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css" >
+    
+
 </head>
 
 <body>
@@ -28,13 +30,13 @@
   <div class="container d-flex flex-column justify-content-between vh-100">
 
     <!-- TITLE SCRREN -->
-    <h1 class="text-center m-4 text-light">Quizz Pink</h1>
+    <h1 id="TITLE" class="text-center m-4 text-light">Perguntas</h1>
 
     <div class="container d-flex flex-column justify-content-center vh-100">
       <div class="d-flex flex-column align-items-center">
 
         <!-- FACT' CARD -->
-        <div class="card w-100 mb-3 shadow">
+        <div class="card w-100 mb-0 shadow">
           <p class="card-header d-flex justify-content-between align-items-center">
             Você Sabia ?
             <i onclick="copy()" class=" fa fa-clone"></i>
@@ -42,11 +44,11 @@
           
           <div class="card-body text-dark">
             <div id="load" class="text-center" style="display: none;">
-              <div class="spinner-border" role="status"><span class="sr-only">Loading...</span></div>
+              <div class="spinner-border" role="status"><span class="sr-only">Carregando...</span></div>
             </div>
 
-            <p style="display: block;">
-              <h2 id="FATO" class="card-text text-center">Perguntas Sobre o Câncer de mama</h2>
+            <p id="FATO" class="card-text text-center" style="display: block;">
+              Você sabia que durante o tratamento (e até depois) pode usar filas preferenciais e que é uma delícia constranger as pessoas que reclamam porque você não é idosa e nem grávida? Exemplo: "Minha senhora, estou nesta fila porque tenho CÂNCER? Hahaha"!
             </p>
 
           </div>
@@ -56,7 +58,7 @@
     
     <!-- BUTTON TO GENERATE A FACT -->
     <div class="container d-flex justify-content-center mb-4">
-      <button onclick="gerarFato()" class="btn btn-primary">Nova Pergunta</button>
+      <button onclick="gerarFato()" class="btn btn-primary">Gerar Pergunta</button>
     </div>
     
   </div>
